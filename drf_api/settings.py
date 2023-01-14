@@ -58,8 +58,8 @@ REST_AUTH_SERIALIZERS = {
 SECRET_KEY = os.getenv('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-# DEBUG = 'DEV' in os.environ
-DEBUG = True
+DEBUG = 'DEV' in os.environ
+
 
 ALLOWED_HOSTS = ['localhost', 'drf-api87.herokuapp.com']
 
@@ -91,6 +91,8 @@ INSTALLED_APPS = [
     'likes',
     'followers',
 ]
+
+SITE_ID = 1
 
 MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
