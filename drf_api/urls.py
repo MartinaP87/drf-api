@@ -25,10 +25,7 @@ urlpatterns = [
     path(
         'dj-rest-auth/registration/', include('dj_rest_auth.registration.urls')
     ),
-    path('dj-rest-auth/logout/', logout_route), 
-    path(
-        'dj-rest-auth/registration/', include('dj_rest_auth.registration.urls')
-        ),
+    path('dj-rest-auth/logout/', logout_route),
     path('', include('profiles.urls')),
     path('', include('posts.urls')),
     path('', include('comments.urls')),
